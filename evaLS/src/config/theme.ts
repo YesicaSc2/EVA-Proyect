@@ -28,6 +28,10 @@ export const darkTheme: ConfigThemes = {
                 // '950': '#0e335d',
             },
 
+            secondary:'#000'
+
+            
+
         }
     }
 }

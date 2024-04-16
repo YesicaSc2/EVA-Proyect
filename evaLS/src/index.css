@@ -26,7 +26,7 @@
         align-items: center;
     }
 
-    .login__form {
+    .register__form {
         @apply container bg-stone-900 py-8 px-6 max-w-[500px] w-full rounded-lg 
     }
 
@@ -100,4 +100,18 @@
     .btn-primary {
         @apply bg-gradient-to-br from-primary-600 to-indigo-700
     }
+
 }
+
+.inputRegister div label {
+    color: black
+    
+}
+
+.register-form {
+    width: 400px; /* Ancho deseado del formulario */
+    height: 550px; /* Alto deseado del formulario */
+    padding: 20px; /* Añadir relleno interno al formulario */
+    border: 1px solid #ccc; /* Añadir borde al formulario */
+    background-color: #fff; /* Color de fondo blanco */
+  }
