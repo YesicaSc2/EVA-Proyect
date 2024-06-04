@@ -4,14 +4,14 @@ import { ModuleI } from "../../interfaces/ModuleI"
 
 export const Module = ({ data }: { data: ModuleI }) => {
   return (
-    <Card className="max-w-[450px]">
+    <Card className="max-w-[400px]">
       <CardHeader className="flex justify-center">
         <Image
           alt="nextui logo"
           radius="none"
-          height="100%"
+          height="70%"
           src={ data.image }
-          width="100%"
+          width="70%"
           
         />
       </CardHeader>
@@ -22,7 +22,7 @@ export const Module = ({ data }: { data: ModuleI }) => {
       </CardBody>
       <Divider/>
       <CardFooter className="flex justify-end">
-      <Link to="/auth">
+      <Link to={`/modulos/${data.id}`}>
         <Button color="primary" variant="flat" size="lg">
           Iniciar
         </Button>
