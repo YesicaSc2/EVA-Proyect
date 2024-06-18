@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { ModuleI } from "../../interfaces/ModuleI";
 import { ModulesData } from "../../models/ModulesData";
+import ProgressBar from "../../components/modulos/ProgressBar";
 
 export const Modulo1 = () => {
   const { id } = useParams();
@@ -16,6 +17,7 @@ export const Modulo1 = () => {
   return (
     <div>
       <Header />
+      <ProgressBar />
       <section className="mb-12 md:mb-0">
         <div className="sm:flex">
           <div className="flex-11 py-20">
@@ -26,14 +28,16 @@ export const Modulo1 = () => {
 
       <div className="flex flex-col justify-start items-center min-h-screen mt-0">
         <div className="w-full max-w-3xl">
-          <iframe
-            className="h-96 w-full rounded-lg"
-            src="https://www.youtube.com/embed/7xTg0HxwIcw"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
+          {module && (
+            <iframe
+              className="h-96 w-full rounded-lg"
+              src={module.video}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          )}
           <div className="flex justify-end mt-4">
             <Link href={`/modulos/${id}/test`}>
               <Button color="primary">Empezar test</Button>
