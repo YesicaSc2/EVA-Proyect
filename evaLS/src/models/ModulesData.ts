@@ -10,35 +10,41 @@ export const ModulesData = [
       title: 'I. Letras',
       description: 'Este modulo sera una introducción y guía para aprender, comenzando con el abecedario.',
       image: uno,
+      video: 'https://www.youtube.com/embed/7xTg0HxwIcw'
     },
     { 
       id: 2,
       title: 'II. Números',
       description: 'Este modulo abarcará números.',
-      image: dos
+      image: dos,
+      video: 'https://www.youtube.com/embed/Rtyn_dSUaug'
     },
     { 
       id: 3,
       title: 'Modulo 3',
       description: 'Este modulo abarcará letras.',
-      image: tres
+      image: tres,
+      video: 'https://www.youtube.com/embed/7xTg0HxwIcw'
     },
     { 
       id: 4,
       title: 'Modulo 4',
       description: 'Este modulo abarcará palabras.',
-      image: cuatro
+      image: cuatro,
+      video: 'https://www.youtube.com/embed/7xTg0HxwIcw'
     },
     { 
       id: 5,
       title: 'Repaso',
       description: 'Repasa las dudas que tengas.',
-      image: repaso
+      image: repaso,
+      video: 'https://www.youtube.com/embed/7xTg0HxwIcw'
     },
     { 
       id: 6,
       title: 'Desafio ',
       description: 'Desafiate a ti mismo con tests.',
-      image: desafio
+      image: desafio,
+      video: 'https://www.youtube.com/embed/7xTg0HxwIcw'
     },
   ];
