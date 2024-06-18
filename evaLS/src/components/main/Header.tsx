@@ -1,7 +1,7 @@
 
-
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Button} from "@nextui-org/react";
 import { Link } from "react-router-dom"
+
 
 
 export const Header =()=> {
@@ -22,6 +22,7 @@ export const Header =()=> {
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" to="/">
+
             Actividad
           </Link>
         </NavbarItem>
@@ -44,3 +45,4 @@ export const Header =()=> {
     </Navbar>
   );
 }
+
